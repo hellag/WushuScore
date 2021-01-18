@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+:root{
+    --primary-color:#7E0505;
+    --secondary-color:black;
+    --third-color:white;
+    --primary-font-style:'Schoolbell', cursive;
+}
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url("images/dragon.png");
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: auto;
+    background-color: var(--secondary-color);
+    font-family: 'Schoolbell', cursive;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+
+}
+.logo{
+    color:var(--primary-color);
+    font-family: 'Lobster', cursive;
+    font-size:30px;
+
+}
+h1{
+    color:var(--third-color);
+}
+
+/*Navbar*/
+header{
+    height: 100px;
+}
+.container{
+    padding:0 40px;
+    max-width: 1100px;
+    margin:0 auto;
+    overflow: auto;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color:var(--primary-color);
+    border: solid 1px ;
+    padding:15px 30px;
+    margin:0 5px;
+}
+a:hover{
+    background-color: var(--primary-color);
+    color:var(--third-color);
+}
+
+
+.basic{
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.basic h1{
+    padding-right: 5px 5px;
+    font-size:44px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 6.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+.main-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 20px;
+  }
+  footer p{
+    color:var(--third-color);
+    font-family: 'Schoolbell', cursive;
+    font-size:15px;
+    margin:10px 10px;
+
+}
+
+.fa{
+    padding:15px;
+    border-radius: 50%;
+    width: 50px;
+}
+.fa-facebook{
+    background:var(--primary-color);
+    color:var(--secondary-color);
+  }
+  .fa-instagram{
+    background:var(--primary-color);
+    color:var(--secondary-color);
+  }

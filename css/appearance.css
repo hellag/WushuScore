@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+}
+:root{
+    --primary-color:#7E0505;
+    --secondary-color:black;
+    --third-color:white;
+    --primary-font: 'Schoolbell', cursive;
+}
+
+body{
+    background-color: var(--third-color);
+    font-family:var(--primary-font);
+    
+}
+.second-header{
+    background-color:var(--secondary-color);
+    color:var(--primary-color);
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-header .header-title{
+    font-family: 'Lobster', cursive;
+    font-size:30px;
+    padding:25px;
+}
+.second-header a{
+    text-decoration: none;
+    font-size:20px;
+    color:var(--primary-color);
+    padding:25px;
+}
+.container {
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.main-table {
+    margin: 25px 0;
+}
+th{
+    background-color: var(--primary-color);
+    font-size:24px;
+    padding: 5px 25px;
+}
